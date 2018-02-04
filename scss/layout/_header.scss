@@ -1,0 +1,169 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+
+
+
+.header {
+  font-family: "PT Sans", sans-serif;
+  width: 100%;
+  height: 90px;
+  padding: 20px;
+  padding-bottom: 0px;
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+
+  &__description {
+    color: $gray;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  &__logo {
+    min-width: 29%;
+  }
+
+  &__logo {
+    flex-direction: column;
+  }
+
+  &__search {
+    min-width: 35%;
+
+    input {
+      border: 1px solid #b9b8bd;
+      border-radius: 3px;
+      height: 40px;
+      font-size: 10px;
+      padding: 5px;
+      padding-left: 12px;
+      width: 100%;
+
+      &::placeholder {
+        color: #b9b8bd;
+        font-size: 13px;
+      }
+    }
+
+    img {
+      position: relative;
+      float: right;
+      top: -28px;
+      left: -15px;
+      width: 15px;
+      cursor: pointer;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    text-align: center;
+    min-width: 35%;
+    margin: auto;
+    height: 100%;
+    padding-left: 20px;
+
+    &-number {
+      width: 60%;
+    }
+
+    &-time {
+      width: 40%;
+      font-size: 10px;
+
+      &_yellow {
+        color: $brownyellow;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__logo {
+      padding-top: 15px;
+    }
+
+    &__img {
+      width: 250px;
+    }
+
+    &__contacts {
+      font-size: 23px;
+      margin-top: 17px;
+
+      &-number {
+        margin-left: 66px;
+      }
+
+      &-time {
+        padding-left: 5px;
+        font-size: 13px;
+      }
+    }
+
+    &__search {
+      position: relative;
+      top: 10px;
+      left: -65px;
+
+      img {
+        left: 50px;
+        height: 16px;
+      }
+
+      input {
+        font-size: 15px;
+        width: 495px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 830px) {
+  .header {
+    &__logo {
+      padding-top: 15px;
+      padding-left: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 830px) and (max-width: 1200px) {
+  .header {
+    &__logo {
+      padding-top: 15px;
+      padding-left: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    font-family: "PT Sans", sans-serif;
+    width: 100%;
+    height: 75px;
+    padding-left: 19px;
+    padding-top: 10px;
+
+    &__description {
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    &__search {
+      display: none;
+    }
+
+    &__contacts {
+      display: none;
+    }
+  }
+}

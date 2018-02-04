@@ -1,0 +1,150 @@
+.nav-md {
+  width: 100%;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-md {
+    margin-top: 10px;
+    height: 55px;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .nav-md {
+    height: 55px;
+    line-height: 55px;
+
+    &__menu-icon {
+      margin-right: 5px;
+    }
+
+    &__list {
+      max-height: 55px;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      border-top: 1px solid $lightgray;
+      border-bottom: 1px solid $lightgray;
+
+      &-menu {
+        &:active {
+          background-color: $lightgray;
+        }
+      }
+
+      &-item {
+        margin: auto;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        img {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav-md__list-item{
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .nav-md {
+    display: none;
+  }
+
+
+  .nav {
+    position: fixed;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: $lightgray;
+
+    &__list {
+      height: 100%;
+      width: 100%;
+      display: flex;
+
+      &-item {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:active {
+          background-color: rgba(186, 212, 255, 0.7);
+        }
+      }
+
+      &-menu {
+        background-color: $lightblue;
+
+        &_open {
+          content: "";
+          border-bottom: 2px solid white;
+          margin: auto;
+          width: 30%;
+          position: relative;
+          top: 50%;
+
+          &:after {
+            margin: auto;
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: 6px;
+            height: 2px;
+            background-color: white;
+          }
+
+          &:before {
+            margin: auto;
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: -6px;
+            height: 2px;
+            background-color: white;
+          }
+        }
+      }
+
+      &-home {
+        background-image: url(../img/icons-xs/home.png);
+      }
+
+      &-search {
+        background-image: url(../img/icons-xs/find.png);
+      }
+
+      &-shop {
+        background-image: url(../img/icons-xs/shop.png);
+      }
+
+      &-signin {
+        background-image: url(../img/icons-xs/signin.png);
+      }
+
+      &-call {
+        background-image: url(../img/icons-xs/phone.png);
+      }
+    }
+  }
+}
