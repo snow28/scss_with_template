@@ -1,0 +1,154 @@
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+    color: $darkgray;
+    border: 1px solid $lightgray;
+    border-radius: 2px;
+    width: 240px;
+    max-height: 260px;
+    position: absolute;
+    z-index: 999;
+    background-color: $white;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+    &__show {
+      display: block;
+    }
+
+    &__header {
+      display: none;
+    }
+
+    ul {
+      color: $brownyellow;
+    }
+
+    &__list {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      div {
+        &:hover {
+          background-color: $lightgray;
+        }
+      }
+
+      &-item {
+        list-style-type: circle;
+        min-height: 30px;
+        line-height: 30px;
+        margin-left: 15%;
+
+        a {
+          text-decoration: none;
+          color: $darkgray;
+          width: 160px;
+        }
+
+        img {
+          transform: rotate(-90deg);
+          margin-left: 20px;
+          float: right;
+          top: 15px;
+          right: 10px;
+          position: relative;
+        }
+      }
+    }
+
+    &__drop-down {
+      &_ul {
+        display: none;
+        border: 1px solid $lightgray;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 3px;
+        min-width: 240px;
+        margin-left: 103%;
+        position: absolute;
+        top: 90px;
+        background-color: $white;
+
+        p {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        &-show {
+          display: block;
+        }
+
+        span {
+          color: $darkgray;
+        }
+
+        li {
+          margin-left: 17px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          list-style-type: circle;
+        }
+      }
+
+      &_header {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    width: 25%;
+    background-color: $lightgray;
+    position: fixed;
+    top: 0px;
+    left: -25%;
+    transition-duration: 1s;
+
+    &__drop-down {
+      display: none;
+    }
+
+    &__header {
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid $gray;
+      height: 40px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+
+    &__list {
+      font-size: 14px;
+      padding-left: 5px;
+
+      &-item {
+        padding-bottom: 5px;
+        margin-right: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $gray;
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    &__show {
+      display: block;
+      left: 0px;
+    }
+  }
+
+  .menu__list-item {
+    font-size: 10px;
+  }
+}

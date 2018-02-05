@@ -47,16 +47,10 @@
       &::placeholder {
         color: #b9b8bd;
         font-size: 13px;
+        background: url("../img/search.png") no-repeat;
+        background-position: 99%;
+        background-position-y: 3px;
       }
-    }
-
-    img {
-      position: relative;
-      float: right;
-      top: -28px;
-      left: -15px;
-      width: 15px;
-      cursor: pointer;
     }
   }
 
@@ -99,39 +93,56 @@
       margin-top: 17px;
 
       &-number {
-        margin-left: 66px;
+        margin-left: 55px;
       }
 
       &-time {
         padding-left: 5px;
-        font-size: 13px;
+        font-size: 12px;
       }
     }
 
     &__search {
       position: relative;
       top: 10px;
-      left: -65px;
-
-      img {
-        left: 50px;
-        height: 16px;
-      }
-
+      left: -63px;
       input {
         font-size: 15px;
         width: 495px;
+        &::placeholder{
+          background-size: 3.9%;
+          line-height: 25px;
+        }
       }
     }
   }
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 830px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
+    max-height: 65px;
     &__logo {
-      padding-top: 15px;
+      padding-top: 5px;
       padding-left: 10px;
+    }
+    &__search{
+      input {
+        margin-left: 18px;
+        margin-top: 3px;
+        max-height: 32px;
+        width: 87%;
+        max-width: 450px;
+        &::placeholder{
+          font-size: 10px;
+          background-size: 11px;
+          line-height: 20px;
+        }
+      }
+    }
+    &__contacts{
+      padding-left: 5px;
+      padding-top: 5px;
     }
   }
 }
