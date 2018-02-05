@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    $('.slider').slick({
-
-	});
+    $('.slider').slick();
 
     $('.js-nav-menu').on('click',function(){
         $('.body').toggleClass('body__move');
@@ -10,37 +8,37 @@ $(document).ready(function(){
     });
 
 
-    $(".nav-md__list-menu_js").on('click',function(){
+    $(".nav-md-open-js").on('click',function(){
         var x = $('.nav-md').position();
         if(x.left>105)x.left = 105;
-        $('.menu').css('margin-left', x.left); // !!!!!!!!!!!КАК ЭТО СДЕЛАТЬ
+        $('.menu').css('margin-left', x.left);
 
-        $('.menu').toggleClass('menu__show');
-        if($('.menu__drop-down_ul').hasClass('menu__drop-down_ul-show')){
+    });
+
+
+    $(window).on('click', function (e) {
+
+        if($(e.target).hasClass('nav-md-open-js')){
+            $('.menu').toggleClass('menu__show');
+            if($('.menu__drop-down_ul').hasClass('menu__drop-down_ul-show')){
+                $('.menu__drop-down_ul').toggleClass('menu__drop-down_ul-show');
+            }
+		}else if($(e.target).hasClass('man-gifts-open-js') || $(e.target).parent().hasClass('man-gifts-open-js') ){
             $('.menu__drop-down_ul').toggleClass('menu__drop-down_ul-show');
-        }
-    });
 
-
-    $('.man-gifts-open-js').on('click',function(){
-        $('.menu__drop-down_ul').toggleClass('menu__drop-down_ul-show');
-    });
-
-    $('body').on('click', function (e) {  // как тут правильно сделать?????
-        if (!$(e.target).hasClass('nav-md__list-menu') // как узнать или есть ребенок
-            && !$(e.target).parent().hasClass('menu__list-item')
-            && !$(e.target).hasClass('js-nav-menu')
-            && !$(e.target).parent().hasClass('js-nav-menu')
-        ) {
+		}else{
             if($('.menu').hasClass('menu__show')){
                 $('.menu').toggleClass('menu__show');
             }
-        }
+		}
+
+
+
     });
 
+
+
 });
-
-
 
 
 $(window).load(function(){
