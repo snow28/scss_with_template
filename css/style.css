@@ -436,11 +436,6 @@ html {
       padding-left: 5px;
       padding-top: 5px; } }
 
-@media screen and (min-width: 830px) and (max-width: 1200px) {
-  .header__logo {
-    padding-top: 15px;
-    padding-left: 30px; } }
-
 @media screen and (max-width: 767px) {
   .header {
     font-family: "PT Sans", sans-serif;
@@ -820,9 +815,9 @@ html {
 
 .slick-prev:before, .slick-next:before {
   width: 40px;
-  content: '.';
-  min-height: 65px;
-  background-color: rgba(208, 164, 109, 0.8); }
+  content: '>';
+  color: #00569C;
+  background: rgba(208, 164, 109, 0.8); }
 
 @media screen and (max-width: 1200px) {
   .slider__md {
@@ -838,16 +833,14 @@ html {
       margin: auto;
       margin-top: 20px; }
   .slick-next {
-    right: 20px;
-    z-index: 999; }
+    right: 15px;
+    z-index: 997; }
   .slick-prev {
-    height: 70px;
-    border-color: rgba(208, 164, 109, 0.8);
-    left: 20px;
+    left: 15px;
     z-index: 997; } }
 
 @media screen and (max-width: 767px) {
-  .slider __md {
+  .slider__md {
     display: none; }
   .slick-next {
     right: 5px;
