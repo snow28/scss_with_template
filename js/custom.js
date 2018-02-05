@@ -1,10 +1,13 @@
 $(document).ready(function(){
-    $('.slider').slick();
+    $('.slider').slick({
+		nextArrow : '<div class="slider__next slider__arrow"><div class="slider__arrow_img"></div></div>',
+		prevArrow : '<div class="slider__prev slider__arrow"><div class="slider__arrow_img"></div></div>'
+	});
 
     $('.js-nav-menu').on('click',function(){
-        $('.body').toggleClass('body__move');
+        $('.main-wrapper').toggleClass('main-wrapper__move');
         $('.banner').toggleClass('banner__move');
-        $('.menu').toggleClass('menu__show');
+        $('.menu').toggleClass('menu__shows');
     });
 
 
@@ -33,9 +36,7 @@ $(document).ready(function(){
 		}
 
 
-
     });
-
 
 
 });

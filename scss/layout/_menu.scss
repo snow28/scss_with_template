@@ -124,25 +124,24 @@
     }
 
     &__list {
-      font-size: 14px;
       padding-left: 5px;
 
       &-item {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         margin-right: 5px;
       }
 
       a {
         text-decoration: none;
         color: $gray;
+        font-size: 13px;
       }
 
       img {
         display: none;
       }
     }
-
-    &__show {
+    &__shows{
       display: block;
       left: 0px;
     }
