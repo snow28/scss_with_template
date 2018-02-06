@@ -4,6 +4,7 @@ $(document).ready(function(){
 		prevArrow : '<div class="slider__prev slider__arrow"><div class="slider__arrow_img"></div></div>'
 	});
 
+    //we adding classes to move our body with all elements to open aside menu for small devices
     $('.js-nav-menu').on('click',function(){
         $('.main-wrapper').toggleClass('main-wrapper__move');
         $('.banner').toggleClass('banner__move');
@@ -15,21 +16,23 @@ $(document).ready(function(){
         var x = $('.nav-md').position();
         if(x.left>105)x.left = 105;
         $('.menu').css('margin-left', x.left);
-
     });
 
 
     $(window).on('click', function (e) {
 
         if($(e.target).hasClass('nav-md-open-js')){
+        	//showing menu when click on button
             $('.menu').toggleClass('menu__show');
             if($('.menu__drop-down_ul').hasClass('menu__drop-down_ul-show')){
                 $('.menu__drop-down_ul').toggleClass('menu__drop-down_ul-show');
             }
+            //opening second lvl of menu
 		}else if($(e.target).hasClass('man-gifts-open-js') || $(e.target).parent().hasClass('man-gifts-open-js') ){
             $('.menu__drop-down_ul').toggleClass('menu__drop-down_ul-show');
 
-		}else{
+            //Closing menu if user clicking not inside block we choosed
+		}else if(!$(e.target).parent().hasClass('menu__list-item') &&  !$(e.target).hasClass('menu__list-item')){
             if($('.menu').hasClass('menu__show')){
                 $('.menu').toggleClass('menu__show');
             }

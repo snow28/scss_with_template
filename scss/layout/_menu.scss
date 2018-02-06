@@ -10,7 +10,12 @@
     z-index: 999;
     background-color: $white;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
+    margin-top: 8px;
+
+    &__block{
+      max-width: 1450px;
+      margin: auto;
+    }
 
     &__show {
       display: block;
@@ -98,6 +103,12 @@
         list-style-type: none;
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .menu{
+    left: 25px;
   }
 }
 
