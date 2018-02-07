@@ -755,7 +755,7 @@ html {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .banner {
-    height: 50px;
+    height: 45px;
     line-height: 20px;
     top: 155px; } }
 
@@ -767,25 +767,43 @@ html {
   .slider__img {
     background-image: url("../img/slider-img.png");
     min-height: 125px; }
+  .slider__prev_wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-width: 50px; }
+  .slider_next_wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+
+.slick__item {
+  z-index: 998;
+  position: absolute; }
 
 .slick-next {
   height: 30px;
   width: 20px;
-  position: absolute;
-  z-index: 999;
   background-color: #d0a46d;
-  top: 45px; }
+  position: absolute;
+  right: 0px;
+  top: -77px; }
   .slick-next:after {
-    z-index: 999;
     content: '';
     position: absolute;
-    height: 50px;
-    width: 50px;
-    background: url("../img/slider_arrow.png") no-repeat; }
+    height: 30px;
+    width: 20px;
+    bottom: 1px;
+    background: url("../img/slider_arrow.png") no-repeat;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-position-x: 3px; }
   .slick-next:hover {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+    background-color: rgba(255, 255, 255, 0.8); }
     .slick-next:hover:after {
       background: url("../img/slider_arrow_hovered.png") no-repeat;
       background-position-x: 5px; }
@@ -794,39 +812,22 @@ html {
   height: 30px;
   width: 20px;
   position: absolute;
-  z-index: 999;
   background-color: #d0a46d;
-  top: 45px; }
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0; }
   .slick-prev:after {
     z-index: 999;
     content: '';
     position: absolute;
-    height: 50px;
-    width: 50px;
-    background: url("../img/slider_arrow.png") no-repeat; }
+    height: 30px;
+    width: 20px;
+    top: 1px;
+    background: url("../img/slider_arrow.png") no-repeat;
+    background-position-x: 3px; }
   .slick-prev:hover {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg); }
-    .slick-prev:hover:after {
-      background: url("../img/slider_arrow_hovered.png") no-repeat;
-      background-position-x: 5px; }
-
-.slick-prev {
-  height: 30px;
-  width: 20px;
-  position: absolute;
-  z-index: 999;
-  background-color: #d0a46d;
-  top: 45px; }
-  .slick-prev:after {
-    z-index: 999;
-    content: '';
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background: url("../img/slider_arrow.png") no-repeat; }
-  .slick-prev:hover {
+    background-color: rgba(255, 255, 255, 0.8);
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg); }

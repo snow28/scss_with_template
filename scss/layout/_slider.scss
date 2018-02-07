@@ -7,26 +7,48 @@
     background-image: url("../img/slider-img.png");
     min-height: 125px;
   }
+  &__prev_wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-width: 50px;
+  }
+  &_next_wrapper{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }
+
+.slick{
+  &__item{
+    z-index: 998;
+    position: absolute;
+  }
+}
+
 
 
 .slick-next{
   height: 30px;
   width: 20px;
-  position: absolute;
-  z-index: 999;
   background-color: $brownyellow;
-  top: 45px;
+  position: absolute;
+  right: 0px;
+  top: -77px;
   &:after{
-    z-index: 999;
     content: '';
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 20px;
+    bottom: 1px;
     background: url("../img/slider_arrow.png") no-repeat;
+    transform: rotate(180deg);
+    background-position-x: 3px;
   }
   &:hover{
     transform: rotate(180deg);
+    background-color: rgba(255,255,255,0.8);
     &:after{
       background: url("../img/slider_arrow_hovered.png") no-repeat;
       background-position-x: 5px;
@@ -39,18 +61,23 @@
   height: 30px;
   width: 20px;
   position: absolute;
-  z-index: 999;
   background-color: $brownyellow;
-  top: 45px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
   &:after{
     z-index: 999;
     content: '';
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 20px;
+    top:1px;
     background: url("../img/slider_arrow.png") no-repeat;
+    background-position-x: 3px;
   }
   &:hover{
+    background-color: rgba(255,255,255,0.8);
     transform: rotate(180deg);
     &:after{
       background: url("../img/slider_arrow_hovered.png") no-repeat;
@@ -59,30 +86,6 @@
   }
 }
 
-
-.slick-prev{
-  height: 30px;
-  width: 20px;
-  position: absolute;
-  z-index: 999;
-  background-color: $brownyellow;
-  top: 45px;
-  &:after{
-    z-index: 999;
-    content: '';
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background: url("../img/slider_arrow.png") no-repeat;
-  }
-  &:hover{
-    transform: rotate(180deg);
-    &:after{
-      background: url("../img/slider_arrow_hovered.png") no-repeat;
-      background-position-x: 5px;
-    }
-  }
-}
 
 
 @media screen and (min-width: 1200px){
@@ -119,6 +122,13 @@
       max-height: 120px;
     }
   }
+  .slick{
+
+  }
+
+
+
+
 }
 
 

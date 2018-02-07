@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.slider').slick({
-		nextArrow : '<div class="slider__next-wrapper"><div class="slick-next"></div></div>',
-		prevArrow : '<div><div class="slick-prev"></div></div>'
+		nextArrow : '<div class="slider_next_wrapper"><div class="slick-next slick__item"></div></div>',
+		prevArrow : '<div class="slider__prev_wrapper"><div class="slick-prev slick__item"></div></div>'
 	});
 
     //we adding classes to move our body with all elements to open aside menu for small devices
