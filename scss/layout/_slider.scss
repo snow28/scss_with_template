@@ -10,6 +10,80 @@
 }
 
 
+.slick-next{
+  height: 30px;
+  width: 20px;
+  position: absolute;
+  z-index: 999;
+  background-color: $brownyellow;
+  top: 45px;
+  &:after{
+    z-index: 999;
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url("../img/slider_arrow.png") no-repeat;
+  }
+  &:hover{
+    transform: rotate(180deg);
+    &:after{
+      background: url("../img/slider_arrow_hovered.png") no-repeat;
+      background-position-x: 5px;
+    }
+  }
+}
+
+
+.slick-prev{
+  height: 30px;
+  width: 20px;
+  position: absolute;
+  z-index: 999;
+  background-color: $brownyellow;
+  top: 45px;
+  &:after{
+    z-index: 999;
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url("../img/slider_arrow.png") no-repeat;
+  }
+  &:hover{
+    transform: rotate(180deg);
+    &:after{
+      background: url("../img/slider_arrow_hovered.png") no-repeat;
+      background-position-x: 5px;
+    }
+  }
+}
+
+
+.slick-prev{
+  height: 30px;
+  width: 20px;
+  position: absolute;
+  z-index: 999;
+  background-color: $brownyellow;
+  top: 45px;
+  &:after{
+    z-index: 999;
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url("../img/slider_arrow.png") no-repeat;
+  }
+  &:hover{
+    transform: rotate(180deg);
+    &:after{
+      background: url("../img/slider_arrow_hovered.png") no-repeat;
+      background-position-x: 5px;
+    }
+  }
+}
+
 
 @media screen and (min-width: 1200px){
   .slider{

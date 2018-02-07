@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23996647-5181-4808-8298-a296d1009b5b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons-xs/slider-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider-img-lg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider-img-md.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/custom.js" afterPath="$PROJECT_DIR$/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/layout/_banner.scss" afterPath="$PROJECT_DIR$/scss/layout/_banner.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/layout/_header.scss" afterPath="$PROJECT_DIR$/scss/layout/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/layout/_info.scss" afterPath="$PROJECT_DIR$/scss/layout/_info.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/layout/_menu.scss" afterPath="$PROJECT_DIR$/scss/layout/_menu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/layout/_nav.scss" afterPath="$PROJECT_DIR$/scss/layout/_nav.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/layout/_slider.scss" afterPath="$PROJECT_DIR$/scss/layout/_slider.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50373137">
+    <splitter split-orientation="horizontal" split-proportion="0.55037314">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -40,11 +31,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/custom.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="38">
-                  <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="45" />
+                  <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_slider.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scss/layout/_slider.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -100,16 +101,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_slider.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scss/layout/_slider.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -117,8 +108,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="114">
-                  <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+                <state relative-caret-position="361">
+                  <caret line="103" column="18" lean-forward="true" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -138,10 +129,10 @@
         <option value="$PROJECT_DIR$/scss/layout/_header.scss" />
         <option value="$PROJECT_DIR$/scss/layout/_nav.scss" />
         <option value="$PROJECT_DIR$/scss/layout/_menu.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/layout/_banner.scss" />
-        <option value="$PROJECT_DIR$/js/custom.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/layout/_slider.scss" />
+        <option value="$PROJECT_DIR$/js/custom.js" />
       </list>
     </option>
   </component>
@@ -248,12 +239,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517861361387</updated>
       <workItem from="1517861362840" duration="3191000" />
-      <workItem from="1517911384487" duration="18962000" />
+      <workItem from="1517911384487" duration="22332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22153000" />
+    <option name="totallyTimeSpent" value="25523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="76" y="-8" width="1852" height="1096" extended-state="6" />
@@ -328,42 +319,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/layout/_banner.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/layout/_nav.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="116" column="14" lean-forward="false" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/layout/_info.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/layout/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -376,18 +335,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom.js">
+    <entry file="file://$PROJECT_DIR$/scss/layout/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="45" />
+        <state relative-caret-position="-209">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/layout/_info.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/layout/_banner.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/layout/_slider.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="53" />
           <folding />
         </state>
       </provider>

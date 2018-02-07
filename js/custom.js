@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.slider').slick({
-		nextArrow : '<div class="slider__next slider__arrow">.</div>',
-		prevArrow : '<div class="slider__prev slider__arrow"></div>'
+		nextArrow : '<div class="slider__next-wrapper"><div class="slick-next"></div></div>',
+		prevArrow : '<div><div class="slick-prev"></div></div>'
 	});
 
     //we adding classes to move our body with all elements to open aside menu for small devices
@@ -29,8 +29,6 @@ $(document).ready(function(){
                 $('.menu').toggleClass('menu__show');
             }
 		}
-
-
     });
 
 
