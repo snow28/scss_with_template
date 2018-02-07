@@ -44,22 +44,20 @@
   .banner {
     top: 210px;
     height: 65px;
-    width: 25%;
+    width: 33%;
+    padding-top: 10px;
+    padding-left: 10px;
     font-size: 20px;
     left: 19%;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .banner {
-    top: 200px;
-  }
-}
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .banner {
     height: 50px;
     line-height: 20px;
-    top: 180px;
+    top: 155px;
   }
 }

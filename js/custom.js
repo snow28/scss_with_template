@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.slider').slick({
-		nextArrow : '<div class="slider__next slider__arrow"><div class="slider__arrow_img"></div></div>',
-		prevArrow : '<div class="slider__prev slider__arrow"><div class="slider__arrow_img"></div></div>'
+		nextArrow : '<div class="slider__next slider__arrow">.</div>',
+		prevArrow : '<div class="slider__prev slider__arrow"></div>'
 	});
 
     //we adding classes to move our body with all elements to open aside menu for small devices
@@ -10,14 +10,6 @@ $(document).ready(function(){
         $('.banner').toggleClass('banner__move');
         $('.menu').toggleClass('menu__shows');
     });
-
-
-    $(".nav-md-open-js").on('click',function(){
-        var x = $('.nav-md').position();
-        if(x.left>105)x.left = 105;
-        $('.menu').css('margin-left', x.left);
-    });
-
 
     $(window).on('click', function (e) {
 
@@ -32,7 +24,7 @@ $(document).ready(function(){
             $('.menu__drop-down_ul').toggleClass('menu__drop-down_ul-show');
 
             //Closing menu if user clicking not inside block we choosed
-		}else if(!$(e.target).parent().hasClass('menu__list-item') &&  !$(e.target).hasClass('menu__list-item')){
+		}else if(!$(e.target).parent().hasClass('menu__list-item')  &&  !$(e.target).hasClass('menu__list-item')){
             if($('.menu').hasClass('menu__show')){
                 $('.menu').toggleClass('menu__show');
             }
